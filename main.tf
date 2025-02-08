@@ -20,7 +20,7 @@ resource "google_compute_instance" "default" {
   metadata_startup_script = <<-EOF
     #!/bin/bash
     echo "hello world" > index.html
-    nohup busybox httpd -f -p 8080 &
+    nohup busybox httpd -f -p ${var.server_port} &
   EOF
 
   allow_stopping_for_update = true
