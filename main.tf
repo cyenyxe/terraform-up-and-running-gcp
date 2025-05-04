@@ -1,7 +1,7 @@
 provider "google" {
   project = "cristina-yenyxe-sandbox"
-  region  = "us-central1"
-  zone    = "us-central1-a"
+  region  = "europe-west1"
+  zone    = "europe-west1-b"
 }
 
 resource "google_service_account" "default" {
